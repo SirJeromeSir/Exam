@@ -1,0 +1,113 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/screen.scss */
+body#LegalMatchExam {
+  font-family: 'GothamBold';
+}
+/* line 12, ../sass/screen.scss */
+body#LegalMatchExam .container {
+  max-width: 1100px;
+  width: 100%;
+}
+/* line 17, ../sass/screen.scss */
+body#LegalMatchExam header {
+  min-height: 90px;
+  padding: 12px 0;
+}
+/* line 23, ../sass/screen.scss */
+body#LegalMatchExam header ul li .fa {
+  color: #3e9d03;
+}
+
+@font-face {
+  font-family: 'GothamBold';
+  src: url("../fonts/GothamBold/GothamBold.eot");
+  src: url("../fonts/GothamBold/GothamBold.eot") format("embedded-opentype"), url("../fonts/GothamBold/GothamBold.woff2") format("woff2"), url("../fonts/GothamBold/GothamBold.woff") format("woff"), url("../fonts/GothamBold/GothamBold.ttf") format("truetype"), url("../fonts/GothamBold/GothamBold.svg#GothamBold") format("svg");
+}
+@font-face {
+  font-family: 'GothamBlack';
+  src: url("../fonts/GothamBlack/GothamBlack.eot");
+  src: url("../fonts/GothamBlack/GothamBlack.eot") format("embedded-opentype"), url("../fonts/GothamBlack/GothamBlack.woff2") format("woff2"), url("../fonts/GothamBlack/GothamBlack.woff") format("woff"), url("../fonts/GothamBlack/GothamBlack.ttf") format("truetype"), url("../fonts/GothamBlack/GothamBlack.svg#GothamBlack") format("svg");
+}
+@font-face {
+  font-family: 'GothamBook';
+  src: url("../fonts/GothamBook/GothamBook.eot");
+  src: url("../fonts/GothamBook/GothamBook.eot") format("embedded-opentype"), url("../fonts/GothamBook/GothamBook.woff2") format("woff2"), url("../fonts/GothamBook/GothamBook.woff") format("woff"), url("../fonts/GothamBook/GothamBook.ttf") format("truetype"), url("../fonts/GothamBook/GothamBook.svg#GothamBook") format("svg");
+}
+@font-face {
+  font-family: 'GothamLight';
+  src: url("../fonts/GothamLight/GothamLight.eot");
+  src: url("../fonts/GothamLight/GothamLight.eot") format("embedded-opentype"), url("../fonts/GothamLight/GothamLight.woff2") format("woff2"), url("../fonts/GothamLight/GothamLight.woff") format("woff"), url("../fonts/GothamLight/GothamLight.ttf") format("truetype"), url("../fonts/GothamLight/GothamLight.svg#GothamLight") format("svg");
+}
+@font-face {
+  font-family: 'GothamMedium';
+  src: url("../fonts/GothamMedium/GothamMedium.eot");
+  src: url("../fonts/GothamMedium/GothamMedium.eot") format("embedded-opentype"), url("../fonts/GothamMedium/GothamMedium.woff2") format("woff2"), url("../fonts/GothamMedium/GothamMedium.woff") format("woff"), url("../fonts/GothamMedium/GothamMedium.ttf") format("truetype"), url("../fonts/GothamMedium/GothamMedium.svg#GothamMedium") format("svg");
+}
