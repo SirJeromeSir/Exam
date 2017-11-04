@@ -8,21 +8,394 @@
 body#LegalMatchExam{
 
 	font-family: 'GothamBold';
+	background:url(../images/bodyBackground.jpg) no-repeat center top;
+
+	.noPadding{
+		padding:0 !important;
+	}
+
+	.paddinBlock{
+		padding:10px;
+	}
 
 	.container{
 		max-width: 1100px;
 		width:100%;
 	}
 
+	.grey{
+		color:#666666 !important;
+	}
+
+	.fa-star{
+		color:#d89108;
+		margin:0 3px;
+	}
+
+	.clearfix{
+		overflow: hidden;
+		clear:both;
+	}
+
 	header{
 		min-height: 90px;
 		padding:12px 0;
+		background:#fff;
 
 		ul{
 			li{
 				.fa{
 					color:#3e9d03;
+					margin-right:5px;
 				}
+			}
+		}
+	}
+
+	.main{
+		padding:30px 0;
+		color:#fff;
+
+		.mainTitle{
+			font-size:42px;
+			font-family: 'GothamLight';
+			margin:0;
+		}
+
+		.subTitle{
+			font-family: 'GothamMedium';
+			margin:0;
+		}
+
+		form{
+			margin-top:50px;
+			.form-group{
+				position: relative;
+				margin-bottom: 30px;
+				.select{
+			    	overflow: hidden; 
+				    display: block;
+				    select{
+						-webkit-appearance: none;
+					    -moz-appearance: none;
+					    appearance: none;
+					    background:url(../images/chevronDown.png) #fff no-repeat 95% center;
+					    cursor: pointer;
+					    option{
+					    	padding:5px 15px;
+					    }
+					}
+			    }
+				.formBox{
+					width:100%;
+					min-height: 65px;
+					background:#fff;
+					border-radius:50px;
+					color:#4e555c;
+					text-indent:45px;
+
+					&::placeholder{
+						color:#4e555c;
+					}
+				}
+				label{
+					font-size:18px;
+					font-family: 'GothamMedium';
+				}
+				input{
+					&:focus{
+						&::-webkit-input-placeholder{
+							color: transparent;
+						}
+					}
+				}
+			}
+			.numberHeading{
+				font-family: 'GothamBold';
+				font-size: 14px;
+				width:30px;
+				height: 30px;
+				line-height: 30px;
+				background:#d68d00;
+				border-radius:50%;
+				position: absolute;
+				left:10px;
+				top:50%;
+			}
+
+			.findCategory{
+				font-size: 18px;
+				font-family: 'GothamBook';
+				color:#fff;
+				a{
+					color:#fff;
+					text-decoration: underline;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		.clientsReviews{
+			h3{
+				font-size:20px;
+				font-family: 'GothamBook';
+			}
+
+			h5{
+				font-size:13px;
+			}
+
+			h6{
+				font-size:10px;
+				color:#dadada;
+			}
+
+			img{
+				margin-bottom:5px;
+			}
+
+			.clientDetails{
+				font-family: 'GothamMedium';
+				margin:0;
+			}
+
+			& > div{
+				border-bottom:solid 1px #fff;
+				padding:15px 0;
+				&:last-child{
+					border:0;
+				}
+			}
+
+			.jobDescription{
+				font-family: 'GothamMedium';
+				font-size:12px;
+				b{
+					margin-right:20px;
+				}
+				.desc{
+					font-size: 11px;
+					font-family: 'GothamBookIta';
+					margin-top:10px;
+					.hideText{
+						display: none;
+					}
+
+					.readMore{
+						height:12px;
+						margin-top:10px;
+						display: block;
+						color:#fbd243;
+						cursor: pointer;
+						font-family: 'GothamBook';
+						padding-right:20px;
+						background:url(../images/readMore.png) no-repeat bottom right;
+					}
+				}
+			}
+		}
+	}
+
+	footer{
+		padding:40px 0;
+		background:#fff;
+		.col-2{
+			font-size:13px;
+			color:#929ba4;
+			font-family: 'GothamBook';
+			ul{
+				margin:15px 0;
+				li{
+					position: relative;
+					margin:0 7px;
+					&:after{
+						content:"\f0c8";
+					    font-size: 4px;
+					    font-family: FontAwesome;
+					    color:#929ba4;
+					    position: absolute;
+					    top:7px; 
+					    right:-10px;
+					}
+					&:last-child{
+						&:after{
+				    		content:"";
+				    	}
+				    }
+					a{
+						color:#929ba4;
+						text-decoration: none;
+					}
+				}
+			}
+
+			p.desc{
+				margin-top:50px;
+				font-size:12px;
+			}
+		}
+	}
+
+	.modal{
+		&#myModalOtherCategories{
+			.modal-content{
+				padding:15px;
+				height: 550px;
+				overflow-y:scroll;
+				.modal-body{
+					ul{
+						li{
+							a{
+								font-size: 12px;
+								font-family: 'GothamMedium';
+							}
+						}
+					}
+				}
+			}
+		}
+		.modal-content{
+
+			.modal-header{
+				border:0;
+				h4{
+					color:#4e555c;
+					font-family: 'GothamLight';
+					&.modal-title{
+						text-transform: uppercase;
+						font-family: 'GothamMedium';
+						border-bottom:solid 1px #4e555c;
+						padding-bottom:10px;
+					}
+				}
+				h5{
+					font-size: 13px;
+					color:#676767;
+					font-family: 'GothamLight';
+				}
+				.numberHeading{
+					font-family: 'GothamBold';
+					color:#fff;
+					font-size: 14px;
+					width:30px;
+					height: 30px;
+					line-height: 30px;
+					background:#d68d00;
+					border-radius:50%;
+					display: inline-block;
+				}
+			}
+
+			.modal-body{
+				padding:0 15px 15px 15px;
+				font-family: 'GothamMedium';
+
+				.imageSpacing{
+					margin-right:20px;
+				}
+
+				.clientProfile{
+					line-height: 18px;
+					.name{
+						font-size:22px;
+					}
+
+					.address,
+					.job{
+						font-size:12px;
+					}
+
+					.address{
+						color:#b4b8bc;
+					}
+				}
+
+				.ratings{
+					margin-top:20px;
+					.rate{
+						font-size:20px;
+					}
+					.users{
+						font-size:17px;
+					}
+				}
+
+				.overallRating{
+					border-top:solid 1px #666;
+					border-bottom:solid 1px #666;
+					padding:25px 0;
+					margin:10px 0;
+					.list-unstyled{
+						margin-right:50px;
+					}
+				}
+
+				.checkbox{
+					margin:20px 0;
+					label{
+						&:after {
+						    content: '';
+						    display: table;
+						    clear: both;
+						}
+						input[type="checkbox"]{
+						    display: none;
+						    &+ .cr > .cr-icon{
+							    transform: scale(3) rotateZ(-20deg);
+							    opacity: 0;
+							    transition: all .3s ease-in;
+							}
+							&:checked + .cr > .cr-icon{
+							    transform: scale(1) rotateZ(0deg);
+							    opacity: 1;
+							}
+							&:disabled + .cr{
+							    opacity: .5;
+							}
+						}
+					}
+					.cr{
+					    position: relative;
+					    display: inline-block;
+					    border: 1px solid #a9a9a9;
+					    border-radius: .25em;
+					    width: 1.3em;
+					    height: 1.3em;
+					    float: left;
+					    margin-right: .5em;
+					}
+					.cr-icon{
+					    position: absolute;
+					    font-size: .8em;
+					    line-height: 0;
+					    top: 50%;
+					    left: 20%;
+					}
+				}
+			}
+		}
+		.modal-footer{
+			border:0;
+			text-align: left;
+			.desc{
+				font-family: "GothamMedium";
+				font-size:13px;
+			}
+			button.findLawyer{
+				width:50%;
+				background:#02377b;
+				height:55px;
+				text-transform: uppercase;
+				color:#fff;
+				border-radius:50px;
+			}
+			.btn-default{
+				border:0;
+				color:#0000ff;
+				text-transform: uppercase;
+				font-family: "GothamMedium";
 			}
 		}
 	}
@@ -77,4 +450,14 @@ body#LegalMatchExam{
 	     url('../fonts/GothamMedium/GothamMedium.woff') format('woff'),
 	     url('../fonts/GothamMedium/GothamMedium.ttf') format('truetype'),
 	     url('../fonts/GothamMedium/GothamMedium.svg#GothamMedium') format('svg');
+}
+
+@font-face {
+	font-family: 'GothamBookIta';
+	src: url('../fonts/GothamBookIta/GothamBookIta.eot');
+	src: url('../fonts/GothamBookIta/GothamBookIta.eot') format('embedded-opentype'),
+	     url('../fonts/GothamBookIta/GothamBookIta.woff2') format('woff2'),
+	     url('../fonts/GothamBookIta/GothamBookIta.woff') format('woff'),
+	     url('../fonts/GothamBookIta/GothamBookIta.ttf') format('truetype'),
+	     url('../fonts/GothamBookIta/GothamBookIta.svg#GothamBookIta') format('svg');
 }

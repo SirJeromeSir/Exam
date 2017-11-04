@@ -1,3 +1,124 @@
-/* Welcome to Compass. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media only screen and (max-width: 768px) {
+	body#LegalMatchExam{
+
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#032c6c+0,1479b6+99 */
+		background: #032c6c; /* Old browsers */
+		background: -moz-linear-gradient(top, #032c6c 0%, #1479b6 99%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #032c6c 0%,#1479b6 99%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #032c6c 0%,#1479b6 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032c6c', endColorstr='#1479b6',GradientType=0 ); /* IE6-9 */
+	
+		.container{
+			padding:15px;
+		}
+
+		header{
+			text-align: center;
+
+			img{
+				margin:0 auto;
+			}
+
+			[class*="col-"] {
+		        width: 100%;
+		    }
+
+		    ul.list-unstyled{
+		    	float:none !important;
+		    }
+		}
+
+		.main{
+			
+			h1, h2{
+				text-align: center;
+			}
+
+			.subTitle{
+				margin-bottom:20px;
+			}
+
+			.clientsReviews{
+				h3{
+					font-size: 17px;
+				}
+			}
+
+			form{
+				margin-top:15px !important;
+			}
+
+			img{
+				margin:0 auto;
+			}
+		}
+
+		footer{
+			[class*="col-"] {
+		        width: 100%;
+		    }
+
+		    img{
+		    	margin:0 auto;
+		    }
+
+		    .list-unstyled{
+		    	float:none !important;
+		    }
+		}
+	}
+
+}
+
+@media only screen and (max-width: 414px) {
+
+	body#LegalMatchExam{
+
+		.main{
+			[class*="col-"] {
+		        width: 100%;
+		    }
+
+		    .mainTitle{
+		    	font-size:30px;
+		    }
+
+		    .subTitle{
+		    	font-size:23px;
+		    }
+		}
+
+		footer{
+			.col-2{
+				p.desc{
+					margin-top:25px;
+				}
+			}
+		}
+
+	}
+
+}
+
+@media only screen and (max-width: 320px) {
+
+	body#LegalMatchExam{
+
+		.main{
+
+		    .mainTitle{
+		    	font-size:25px;
+		    }
+
+		    .subTitle{
+		    	font-size:20px;
+		    }
+
+		    .findCategory{
+		    	font-size:15px;
+		    }
+		}
+
+	}
+
+}

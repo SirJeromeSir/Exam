@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -70,20 +70,411 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 8, ../sass/screen.scss */
 body#LegalMatchExam {
   font-family: 'GothamBold';
+  background: url(../images/bodyBackground.jpg) no-repeat center top;
 }
-/* line 12, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
+body#LegalMatchExam .noPadding {
+  padding: 0 !important;
+}
+/* line 17, ../sass/screen.scss */
+body#LegalMatchExam .paddinBlock {
+  padding: 10px;
+}
+/* line 21, ../sass/screen.scss */
 body#LegalMatchExam .container {
   max-width: 1100px;
   width: 100%;
 }
-/* line 17, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
+body#LegalMatchExam .grey {
+  color: #666666 !important;
+}
+/* line 30, ../sass/screen.scss */
+body#LegalMatchExam .fa-star {
+  color: #d89108;
+  margin: 0 3px;
+}
+/* line 35, ../sass/screen.scss */
+body#LegalMatchExam .clearfix {
+  overflow: hidden;
+  clear: both;
+}
+/* line 40, ../sass/screen.scss */
 body#LegalMatchExam header {
   min-height: 90px;
   padding: 12px 0;
+  background: #fff;
 }
-/* line 23, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 body#LegalMatchExam header ul li .fa {
   color: #3e9d03;
+  margin-right: 5px;
+}
+/* line 55, ../sass/screen.scss */
+body#LegalMatchExam .main {
+  padding: 30px 0;
+  color: #fff;
+}
+/* line 59, ../sass/screen.scss */
+body#LegalMatchExam .main .mainTitle {
+  font-size: 42px;
+  font-family: 'GothamLight';
+  margin: 0;
+}
+/* line 65, ../sass/screen.scss */
+body#LegalMatchExam .main .subTitle {
+  font-family: 'GothamMedium';
+  margin: 0;
+}
+/* line 70, ../sass/screen.scss */
+body#LegalMatchExam .main form {
+  margin-top: 50px;
+}
+/* line 72, ../sass/screen.scss */
+body#LegalMatchExam .main form .form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+/* line 75, ../sass/screen.scss */
+body#LegalMatchExam .main form .form-group .select {
+  overflow: hidden;
+  display: block;
+}
+/* line 78, ../sass/screen.scss */
+body#LegalMatchExam .main form .form-group .select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../images/chevronDown.png) #fff no-repeat 95% center;
+  cursor: pointer;
+}
+/* line 84, ../sass/screen.scss */
+body#LegalMatchExam .main form .form-group .select select option {
+  padding: 5px 15px;
+}
+/* line 89, ../sass/screen.scss */
+body#LegalMatchExam .main form .form-group .formBox {
+  width: 100%;
+  min-height: 65px;
+  background: #fff;
+  border-radius: 50px;
+  color: #4e555c;
+  text-indent: 45px;
+}
+/* line 97, ../sass/screen.scss */
+body#LegalMatchExam .main form .form-group .formBox::placeholder {
+  color: #4e555c;
+}
+/* line 101, ../sass/screen.scss */
+body#LegalMatchExam .main form .form-group label {
+  font-size: 18px;
+  font-family: 'GothamMedium';
+}
+/* line 107, ../sass/screen.scss */
+body#LegalMatchExam .main form .form-group input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+/* line 113, ../sass/screen.scss */
+body#LegalMatchExam .main form .numberHeading {
+  font-family: 'GothamBold';
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: #d68d00;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+}
+/* line 126, ../sass/screen.scss */
+body#LegalMatchExam .main form .findCategory {
+  font-size: 18px;
+  font-family: 'GothamBook';
+  color: #fff;
+}
+/* line 130, ../sass/screen.scss */
+body#LegalMatchExam .main form .findCategory a {
+  color: #fff;
+  text-decoration: underline;
+}
+/* line 133, ../sass/screen.scss */
+body#LegalMatchExam .main form .findCategory a:hover {
+  text-decoration: none;
+}
+/* line 141, ../sass/screen.scss */
+body#LegalMatchExam .main .clientsReviews h3 {
+  font-size: 20px;
+  font-family: 'GothamBook';
+}
+/* line 146, ../sass/screen.scss */
+body#LegalMatchExam .main .clientsReviews h5 {
+  font-size: 13px;
+}
+/* line 150, ../sass/screen.scss */
+body#LegalMatchExam .main .clientsReviews h6 {
+  font-size: 10px;
+  color: #dadada;
+}
+/* line 155, ../sass/screen.scss */
+body#LegalMatchExam .main .clientsReviews img {
+  margin-bottom: 5px;
+}
+/* line 159, ../sass/screen.scss */
+body#LegalMatchExam .main .clientsReviews .clientDetails {
+  font-family: 'GothamMedium';
+  margin: 0;
+}
+/* line 164, ../sass/screen.scss */
+body#LegalMatchExam .main .clientsReviews > div {
+  border-bottom: solid 1px #fff;
+  padding: 15px 0;
+}
+/* line 167, ../sass/screen.scss */
+body#LegalMatchExam .main .clientsReviews > div:last-child {
+  border: 0;
+}
+/* line 172, ../sass/screen.scss */
+body#LegalMatchExam .main .clientsReviews .jobDescription {
+  font-family: 'GothamMedium';
+  font-size: 12px;
+}
+/* line 175, ../sass/screen.scss */
+body#LegalMatchExam .main .clientsReviews .jobDescription b {
+  margin-right: 20px;
+}
+/* line 178, ../sass/screen.scss */
+body#LegalMatchExam .main .clientsReviews .jobDescription .desc {
+  font-size: 11px;
+  font-family: 'GothamBookIta';
+  margin-top: 10px;
+}
+/* line 182, ../sass/screen.scss */
+body#LegalMatchExam .main .clientsReviews .jobDescription .desc .hideText {
+  display: none;
+}
+/* line 186, ../sass/screen.scss */
+body#LegalMatchExam .main .clientsReviews .jobDescription .desc .readMore {
+  height: 12px;
+  margin-top: 10px;
+  display: block;
+  color: #fbd243;
+  cursor: pointer;
+  font-family: 'GothamBook';
+  padding-right: 20px;
+  background: url(../images/readMore.png) no-repeat bottom right;
+}
+/* line 201, ../sass/screen.scss */
+body#LegalMatchExam footer {
+  padding: 40px 0;
+  background: #fff;
+}
+/* line 204, ../sass/screen.scss */
+body#LegalMatchExam footer .col-2 {
+  font-size: 13px;
+  color: #929ba4;
+  font-family: 'GothamBook';
+}
+/* line 208, ../sass/screen.scss */
+body#LegalMatchExam footer .col-2 ul {
+  margin: 15px 0;
+}
+/* line 210, ../sass/screen.scss */
+body#LegalMatchExam footer .col-2 ul li {
+  position: relative;
+  margin: 0 7px;
+}
+/* line 213, ../sass/screen.scss */
+body#LegalMatchExam footer .col-2 ul li:after {
+  content: "\f0c8";
+  font-size: 4px;
+  font-family: FontAwesome;
+  color: #929ba4;
+  position: absolute;
+  top: 7px;
+  right: -10px;
+}
+/* line 223, ../sass/screen.scss */
+body#LegalMatchExam footer .col-2 ul li:last-child:after {
+  content: "";
+}
+/* line 227, ../sass/screen.scss */
+body#LegalMatchExam footer .col-2 ul li a {
+  color: #929ba4;
+  text-decoration: none;
+}
+/* line 234, ../sass/screen.scss */
+body#LegalMatchExam footer .col-2 p.desc {
+  margin-top: 50px;
+  font-size: 12px;
+}
+/* line 243, ../sass/screen.scss */
+body#LegalMatchExam .modal#myModalOtherCategories .modal-content {
+  padding: 15px;
+  height: 550px;
+  overflow-y: scroll;
+}
+/* line 250, ../sass/screen.scss */
+body#LegalMatchExam .modal#myModalOtherCategories .modal-content .modal-body ul li a {
+  font-size: 12px;
+  font-family: 'GothamMedium';
+}
+/* line 261, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-header {
+  border: 0;
+}
+/* line 263, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-header h4 {
+  color: #4e555c;
+  font-family: 'GothamLight';
+}
+/* line 266, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-header h4.modal-title {
+  text-transform: uppercase;
+  font-family: 'GothamMedium';
+  border-bottom: solid 1px #4e555c;
+  padding-bottom: 10px;
+}
+/* line 273, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-header h5 {
+  font-size: 13px;
+  color: #676767;
+  font-family: 'GothamLight';
+}
+/* line 278, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-header .numberHeading {
+  font-family: 'GothamBold';
+  color: #fff;
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: #d68d00;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* line 291, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body {
+  padding: 0 15px 15px 15px;
+  font-family: 'GothamMedium';
+}
+/* line 295, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .imageSpacing {
+  margin-right: 20px;
+}
+/* line 299, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .clientProfile {
+  line-height: 18px;
+}
+/* line 301, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .clientProfile .name {
+  font-size: 22px;
+}
+/* line 305, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .clientProfile .address,
+body#LegalMatchExam .modal .modal-content .modal-body .clientProfile .job {
+  font-size: 12px;
+}
+/* line 310, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .clientProfile .address {
+  color: #b4b8bc;
+}
+/* line 315, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .ratings {
+  margin-top: 20px;
+}
+/* line 317, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .ratings .rate {
+  font-size: 20px;
+}
+/* line 320, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .ratings .users {
+  font-size: 17px;
+}
+/* line 325, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .overallRating {
+  border-top: solid 1px #666;
+  border-bottom: solid 1px #666;
+  padding: 25px 0;
+  margin: 10px 0;
+}
+/* line 330, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .overallRating .list-unstyled {
+  margin-right: 50px;
+}
+/* line 335, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .checkbox {
+  margin: 20px 0;
+}
+/* line 338, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .checkbox label:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 343, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .checkbox label input[type="checkbox"] {
+  display: none;
+}
+/* line 345, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .checkbox label input[type="checkbox"] + .cr > .cr-icon {
+  transform: scale(3) rotateZ(-20deg);
+  opacity: 0;
+  transition: all .3s ease-in;
+}
+/* line 350, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon {
+  transform: scale(1) rotateZ(0deg);
+  opacity: 1;
+}
+/* line 354, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .checkbox label input[type="checkbox"]:disabled + .cr {
+  opacity: .5;
+}
+/* line 359, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .checkbox .cr {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #a9a9a9;
+  border-radius: .25em;
+  width: 1.3em;
+  height: 1.3em;
+  float: left;
+  margin-right: .5em;
+}
+/* line 369, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-content .modal-body .checkbox .cr-icon {
+  position: absolute;
+  font-size: .8em;
+  line-height: 0;
+  top: 50%;
+  left: 20%;
+}
+/* line 379, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-footer {
+  border: 0;
+  text-align: left;
+}
+/* line 382, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-footer .desc {
+  font-family: "GothamMedium";
+  font-size: 13px;
+}
+/* line 386, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-footer button.findLawyer {
+  width: 50%;
+  background: #02377b;
+  height: 55px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 50px;
+}
+/* line 394, ../sass/screen.scss */
+body#LegalMatchExam .modal .modal-footer .btn-default {
+  border: 0;
+  color: #0000ff;
+  text-transform: uppercase;
+  font-family: "GothamMedium";
 }
 
 @font-face {
@@ -110,4 +501,9 @@ body#LegalMatchExam header ul li .fa {
   font-family: 'GothamMedium';
   src: url("../fonts/GothamMedium/GothamMedium.eot");
   src: url("../fonts/GothamMedium/GothamMedium.eot") format("embedded-opentype"), url("../fonts/GothamMedium/GothamMedium.woff2") format("woff2"), url("../fonts/GothamMedium/GothamMedium.woff") format("woff"), url("../fonts/GothamMedium/GothamMedium.ttf") format("truetype"), url("../fonts/GothamMedium/GothamMedium.svg#GothamMedium") format("svg");
+}
+@font-face {
+  font-family: 'GothamBookIta';
+  src: url("../fonts/GothamBookIta/GothamBookIta.eot");
+  src: url("../fonts/GothamBookIta/GothamBookIta.eot") format("embedded-opentype"), url("../fonts/GothamBookIta/GothamBookIta.woff2") format("woff2"), url("../fonts/GothamBookIta/GothamBookIta.woff") format("woff"), url("../fonts/GothamBookIta/GothamBookIta.ttf") format("truetype"), url("../fonts/GothamBookIta/GothamBookIta.svg#GothamBookIta") format("svg");
 }

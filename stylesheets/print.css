@@ -1,3 +1,100 @@
-/* Welcome to Compass. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media only screen and (max-width: 768px) {
+  /* line 2, ../sass/print.scss */
+  body#LegalMatchExam {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#032c6c+0,1479b6+99 */
+    background: #032c6c;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #032c6c 0%, #1479b6 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #032c6c 0%, #1479b6 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #032c6c 0%, #1479b6 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032c6c', endColorstr='#1479b6',GradientType=0 );
+    /* IE6-9 */
+  }
+  /* line 11, ../sass/print.scss */
+  body#LegalMatchExam .container {
+    padding: 15px;
+  }
+  /* line 15, ../sass/print.scss */
+  body#LegalMatchExam header {
+    text-align: center;
+  }
+  /* line 18, ../sass/print.scss */
+  body#LegalMatchExam header img {
+    margin: 0 auto;
+  }
+  /* line 22, ../sass/print.scss */
+  body#LegalMatchExam header [class*="col-"] {
+    width: 100%;
+  }
+  /* line 26, ../sass/print.scss */
+  body#LegalMatchExam header ul.list-unstyled {
+    float: none !important;
+  }
+  /* line 33, ../sass/print.scss */
+  body#LegalMatchExam .main h1, body#LegalMatchExam .main h2 {
+    text-align: center;
+  }
+  /* line 37, ../sass/print.scss */
+  body#LegalMatchExam .main .subTitle {
+    margin-bottom: 20px;
+  }
+  /* line 42, ../sass/print.scss */
+  body#LegalMatchExam .main .clientsReviews h3 {
+    font-size: 17px;
+  }
+  /* line 47, ../sass/print.scss */
+  body#LegalMatchExam .main form {
+    margin-top: 15px !important;
+  }
+  /* line 51, ../sass/print.scss */
+  body#LegalMatchExam .main img {
+    margin: 0 auto;
+  }
+  /* line 57, ../sass/print.scss */
+  body#LegalMatchExam footer [class*="col-"] {
+    width: 100%;
+  }
+  /* line 61, ../sass/print.scss */
+  body#LegalMatchExam footer img {
+    margin: 0 auto;
+  }
+  /* line 65, ../sass/print.scss */
+  body#LegalMatchExam footer .list-unstyled {
+    float: none !important;
+  }
+}
+@media only screen and (max-width: 414px) {
+  /* line 78, ../sass/print.scss */
+  body#LegalMatchExam .main [class*="col-"] {
+    width: 100%;
+  }
+  /* line 82, ../sass/print.scss */
+  body#LegalMatchExam .main .mainTitle {
+    font-size: 30px;
+  }
+  /* line 86, ../sass/print.scss */
+  body#LegalMatchExam .main .subTitle {
+    font-size: 23px;
+  }
+  /* line 93, ../sass/print.scss */
+  body#LegalMatchExam footer .col-2 p.desc {
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 109, ../sass/print.scss */
+  body#LegalMatchExam .main .mainTitle {
+    font-size: 25px;
+  }
+  /* line 113, ../sass/print.scss */
+  body#LegalMatchExam .main .subTitle {
+    font-size: 20px;
+  }
+  /* line 117, ../sass/print.scss */
+  body#LegalMatchExam .main .findCategory {
+    font-size: 15px;
+  }
+}

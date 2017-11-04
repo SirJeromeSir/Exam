@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'GothamBookIta';
+    src: url('fonts/GothamBookIta.eot');
+    src: url('fonts/GothamBookIta.eot') format('embedded-opentype'),
+         url('fonts/GothamBookIta.woff2') format('woff2'),
+         url('fonts/GothamBookIta.woff') format('woff'),
+         url('fonts/GothamBookIta.ttf') format('truetype'),
+         url('fonts/GothamBookIta.svg#GothamBookIta') format('svg');
+}
